@@ -545,7 +545,7 @@ function checkPw(){
 function switchTab(t){
   document.querySelectorAll('.cs-tab-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.cs-panel').forEach(p=>p.classList.remove('active'));
-  document.querySelector('[onclick="switchTab(''+t+'')"]').classList.add('active');
+  document.querySelector(`[onclick="switchTab('${t}')"]`).classList.add('active');
   document.getElementById('panel-'+t).classList.add('active');
 }
 function openLb(src){
