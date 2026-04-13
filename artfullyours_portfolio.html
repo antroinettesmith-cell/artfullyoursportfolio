@@ -6,12 +6,13 @@
 <title>The Artfullyours Agency | Private Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/lcq4dzl.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--plum:#3D1A2E;--plum-mid:#5C2D4A;--gold:#B8860B;--gold-bright:#D4A843;--cream:#F5F0E8;--cream-pale:#EDE8DF;--charcoal:#2A2A2A;--noir:#1A0A1A}
 body{font-family:'Jost',sans-serif;font-weight:300;background:var(--cream);color:var(--charcoal);overflow-x:hidden}
 #gate{position:fixed;inset:0;background:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;padding:2rem}
-.gate-mono{font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;color:var(--gold-bright);line-height:1;margin-bottom:8px}
+.gate-mono{font-family:'dulcinea',serif;font-size:80px;font-weight:400;color:var(--gold-bright);line-height:1;margin-bottom:8px}
 .gate-name{font-size:9px;font-weight:300;letter-spacing:.4em;color:rgba(245,240,232,.4);text-transform:uppercase;margin-bottom:48px}
 .gate-label{font-size:9px;font-weight:300;letter-spacing:.35em;color:var(--gold-bright);text-transform:uppercase;margin-bottom:16px}
 .gate-wrap{display:flex;width:100%;max-width:320px}
@@ -24,13 +25,16 @@ body{font-family:'Jost',sans-serif;font-weight:300;background:var(--cream);color
 .gate-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:rgba(245,240,232,.3);margin-top:48px}
 #main{display:none}
 nav{background:var(--plum);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100;border-bottom:.5px solid rgba(212,168,67,.15)}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:300;color:var(--cream);letter-spacing:.08em}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo-ay{font-family:'dulcinea',serif;font-size:22px;font-weight:400;color:var(--gold-bright);line-height:1}
+.nav-logo-divider{width:1px;height:22px;background:rgba(212,168,67,.3);flex-shrink:0}
+.nav-logo-text{font-family:'Jost',sans-serif;font-size:11px;font-weight:300;color:var(--cream);letter-spacing:.28em;text-transform:uppercase}
 .nav-logo span{color:var(--gold-bright)}
 .nav-links{display:flex;gap:24px;list-style:none}
 .nav-links a{font-size:9px;font-weight:300;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,240,232,.55);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--gold-bright)}
 .hero{background:var(--plum);min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden}
-.hero-wm{position:absolute;font-family:'Cormorant Garamond',serif;font-size:420px;font-weight:300;color:rgba(184,134,11,.04);pointer-events:none;user-select:none;line-height:1;top:50%;left:50%;transform:translate(-50%,-50%)}
+.hero-wm{position:absolute;font-family:'dulcinea',serif;font-size:420px;font-weight:400;color:rgba(184,134,11,.04);pointer-events:none;user-select:none;line-height:1;top:50%;left:50%;transform:translate(-50%,-50%)}
 .hero-eye{font-size:9px;font-weight:300;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:24px}
 .hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,7vw,82px);font-weight:300;color:var(--cream);line-height:1.08;max-width:820px;margin-bottom:12px}
 .hero-h1 em{color:var(--gold-bright);font-style:italic}
@@ -144,7 +148,7 @@ section{padding:80px 2rem}
 /* DOWNLOAD */
 .dl-section{background:var(--plum);text-align:center}
 .dl-box{max-width:540px;margin:0 auto;border:.5px solid rgba(212,168,67,.28);padding:56px 44px}
-.dl-mono{font-family:'Cormorant Garamond',serif;font-size:60px;font-weight:300;color:rgba(212,168,67,.2);line-height:1;margin-bottom:24px}
+.dl-mono{font-family:'dulcinea',serif;font-size:60px;font-weight:400;color:rgba(212,168,67,.2);line-height:1;margin-bottom:24px}
 
 /* CTA */
 .cta-section{background:var(--noir);text-align:center}
@@ -195,7 +199,11 @@ footer{background:var(--plum);border-top:.5px solid rgba(212,168,67,.18);padding
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">The <span>Artfullyours</span> Agency</div>
+  <div class="nav-logo">
+    <span class="nav-logo-ay">AY</span>
+    <span class="nav-logo-divider"></span>
+    <span class="nav-logo-text">The Artfullyours Agency</span>
+  </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -393,7 +401,7 @@ footer{background:var(--plum);border-top:.5px solid rgba(212,168,67,.18);padding
       <div style="font-size:9px;font-weight:300;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Also Recognized For</div>
       <div style="font-size:13px;font-weight:300;color:rgba(42,42,42,.65);line-height:1.8;">Corporate Wellness Programs (Starz, Guardant Health, Vast Space) &middot; FitPros &middot; Irving Symphony Orchestra &middot; KPMG &middot; Verizon Wireless &middot; MD Anderson Cancer Foundation</div>
     </div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:rgba(61,26,46,.08);">AY</div>
+    <div style="font-family:'dulcinea',serif;font-size:40px;font-weight:400;color:rgba(61,26,46,.08);">AY</div>
   </div>
 </section>
 
@@ -447,7 +455,7 @@ footer{background:var(--plum);border-top:.5px solid rgba(212,168,67,.18);padding
       </div>
     </div>
     <div class="video-card" style="background:var(--plum);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;cursor:default;">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:rgba(212,168,67,.25);">AY</div>
+      <div style="font-family:'dulcinea',serif;font-size:36px;font-weight:400;color:rgba(212,168,67,.25);">AY</div>
       <div style="font-size:9px;font-weight:300;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,240,232,.35);text-align:center;padding:0 20px;">Additional reels available upon request</div>
       <a href="#contact" class="btn-outline" style="font-size:8px;padding:10px 20px;">Request Access</a>
     </div>
