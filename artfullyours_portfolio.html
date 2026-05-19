@@ -12,7 +12,7 @@ h<!DOCTYPE html>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--plum:#3D1A2E;--plum-mid:#5C2D4A;--gold:#B8860B;--gold-bright:#D4A843;--cream:#F5F0E8;--cream-pale:#EDE8DF;--charcoal:#2A2A2A;--noir:#1A0A1A}
 body{font-family:'Jost',sans-serif;font-weight:300;background:var(--cream);color:var(--charcoal);overflow-x:hidden}
-#gate{position:fixed;inset:0;background:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;padding:2rem}
+#gate{position:fixed;inset:0;background:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;z-index:9999;padding:18vh 2rem 2rem}
 .gate-mono{font-family:'dulcinea',serif;font-size:80px;font-weight:400;color:var(--gold-bright);line-height:1;margin-bottom:24px;display:flex;align-items:center;justify-content:center}
 .gate-name{font-size:15px;font-weight:300;letter-spacing:.3em;color:rgba(245,240,232,.55);text-transform:uppercase;margin-bottom:52px;margin-top:8px}
 .gate-label{font-size:9px;font-weight:300;letter-spacing:.35em;color:var(--gold-bright);text-transform:uppercase;margin-bottom:10px}
@@ -23,7 +23,7 @@ body{font-family:'Jost',sans-serif;font-weight:300;background:var(--cream);color
 .gate-btn{background:var(--gold-bright);border:none;color:var(--plum);font-family:'Jost',sans-serif;font-size:9px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;padding:12px 20px;cursor:pointer}
 .gate-btn:hover{background:var(--gold)}
 .gate-err{font-size:11px;color:rgba(212,168,67,.7);letter-spacing:.1em;margin-top:12px;min-height:16px;text-align:center}
-.gate-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:rgba(245,240,232,.55);margin-top:18px;letter-spacing:.04em}
+.gate-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:rgba(245,240,232,.55);margin-top:12px;letter-spacing:.04em}
 #main{display:none}
 nav{background:var(--plum);padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:100;border-bottom:.5px solid rgba(212,168,67,.15)}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -202,7 +202,7 @@ footer{background:var(--plum);border-top:.5px solid rgba(212,168,67,.18);padding
 
 <!-- GATE -->
 <div id="gate">
-  <img src="images/AY_Horizontal_Lockup.png" alt="The Artfullyours Agency" class="gate-lockup" style="max-width:480px;width:80%;height:auto;margin-bottom:20px;display:block;">
+  <img src="images/AY_Horizontal_Lockup.png" alt="The Artfullyours Agency" class="gate-lockup" style="max-width:480px;width:80%;height:auto;margin-bottom:8px;display:block;">
   <div class="gate-label">Private Portfolio Access</div>
   <div class="gate-wrap">
     <div style="flex:1;position:relative;display:flex;">
@@ -224,7 +224,7 @@ footer{background:var(--plum);border-top:.5px solid rgba(212,168,67,.18);padding
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <img src="images/AY_Horizontal_Lockup.png" alt="The Artfullyours Agency" style="height:72px;width:auto;display:block;">
+    <img src="images/AY_Horizontal_Lockup.png" alt="The Artfullyours Agency" style="height:110px;width:auto;display:block;">
   </div>
   <ul class="nav-links">
     <li><a href="#work">Work</a></li>
@@ -434,7 +434,7 @@ footer{background:var(--plum);border-top:.5px solid rgba(212,168,67,.18);padding
 
 <!-- FOOTER -->
 <footer style="background:var(--plum);border-top:.5px solid rgba(212,168,67,.18);padding:48px 2.5rem;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;">
-  <div><img src="images/AY_Horizontal_Lockup.png" alt="The Artfullyours Agency" style="height:60px;width:auto;display:block;opacity:.85;"></div>
+  <div><img src="images/AY_Horizontal_Lockup.png" alt="The Artfullyours Agency" style="height:90px;width:auto;display:block;opacity:.85;"></div>
   <div class="f-logo" style="font-size:11px;color:rgba(245,240,232,.45);">The Artfullyours Agency · Est. 2025</div>
   <div style="font-size:11px;font-weight:300;letter-spacing:.08em;color:rgba(245,240,232,.35);">portfolio.artfullyoursevents.com · antroinette@artfullyoursevents.com</div>
   <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:rgba(245,240,232,.45);margin:8px 0;">“Every great event is the result of a great process.”</p>
